@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fffff8;
+    font-family: 'Russo One', sans-serif;
+
+}
+#app{
+    display: grid;
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-columns: 100%;
+    height:100vh;
+    background: linear-gradient(45deg, black, transparent);
+    color: black;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.holder{
+    margin: auto;
+    display: grid;
+}
+/*
+.entry{
+
+}
+*/
+#entryHolder{
+    width:417;
+}
+
+#date:hover {
+    font-size: xx-large;
+    color: white;
+}
+
+#temp:hover{
+    font-size: xx-large;
+    color: white;
+}
+#content {
+    padding-bottom: 10px;
+}
+
+#content:hover{
+    font-size: xx-large;
+    color: white;
+}
+
+.headline {
+    color: crimson;
+    font-size: xxx-large;
+    animation: mymove 7s infinite;
+}
+
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px black;}
+  }
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+    text-align: center;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:black;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+    border: none;
+    border-radius: 3%;
+    text-align: center;   
+}
+
+button{
+    width: 475px;
+    height: 70px;
+    background:black;
+    color: #f0d43a;
+    font-size: 1.4rem;
+    font-family: 'Russo One', sans-serif;
+    border: none;
+    border-radius: 3%;
+    margin-top: 11px;
+}
+button:hover {
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+}
+/*
+.title{
+    
+}
+*/
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:black;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+    padding: 3px 7px;
+    border-radius: 3%;
+    text-align: center;
+    padding-top: 98px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Russo One', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Russo One', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Russo One', sans-serif;
+} 
